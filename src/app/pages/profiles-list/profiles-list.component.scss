@@ -49,6 +49,10 @@
   }
 }
 .table-container {
+  overflow: hidden;
+  .table-scroll {
+    overflow-x: auto;
+  }
   .mat-table {
     width: 100%;
     th {
@@ -138,5 +142,20 @@
     color: #6e6e6e;
     padding: 15px;
     font-size: 12px;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .search-box {
+    width: 75% !important;
+  }
+  .table-container {
+    padding: 5px;
+    td {
+      padding: 9px;
+      white-space: nowrap;
+    }
   }
 }
