@@ -36,3 +36,20 @@
     background: #fff;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .details-body-container {
+    flex-direction: column;
+  }
+  .details-right-container {
+    order: 0;
+    width: auto !important;
+  }
+  .quick-facts {
+    order: 1;
+  }
+  .details-nav-bar {
+    margin-left: 0;
+  }
+}

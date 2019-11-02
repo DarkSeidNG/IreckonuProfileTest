@@ -69,3 +69,12 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .details-side-bar {
+    width: auto !important;
+    max-width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+    padding: 30px;
+  }
+}
