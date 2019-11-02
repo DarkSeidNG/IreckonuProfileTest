@@ -1,0 +1,38 @@
+.profile-details-image-cont {
+  position: relative;
+  margin: 0 20px;
+  img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 5px;
+    background: #eaeaea;
+  }
+  .linkedin-circle {
+    border-radius: 50%;
+    background: #3C4251;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    right: -6px;
+  }
+}
+.details-nav-bar {
+  margin-left: 20%;
+  .mat-tab-nav-bar {
+    border-bottom: solid 1.5px rgba(255, 255, 255, 0.84);
+  }
+}
+.details-body-container {
+  display: flex;
+  .details-right-container {
+    width: 100%;
+    padding: 7px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,4 @@
+<div *ngIf="alertsService.alerts.length" [class]="'alert-box ' + alertsService.alerts[0].type">
+  <span>{{alertsService.alerts[0].message}}</span>
+  <a (click)="alertsService.clear()"><mat-icon>close</mat-icon></a>
+</div>

@@ -1,0 +1,19 @@
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.circle {
+  fill: none;
+  stroke-linecap: round;
+  -webkit-animation: progress 1s ease-out forwards;
+  -o-animation: progress 1s ease-out forwards;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0;
+  }
+}

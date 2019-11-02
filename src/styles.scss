@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+$primary-color: #03A9F4;
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #F5F5F5;}
+.header-title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.mat-tab-list {
+  padding: 0 40px;
+  .mat-tab-link {
+    color: #fff;
+    font-weight: 300;
+    opacity: 1;
+    min-width: 110px;
+    padding: 0 14px;
+  }
+  .mat-tab-label-active {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .mat-ink-bar {
+    background: #fff !important;
+    height: 3px !important;
+    width: 110px;
+  }
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: blue;
+}

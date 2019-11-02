@@ -1,0 +1,16 @@
+.alert-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  &.error {
+    background: rgba(203, 46, 24, 0.39);
+    color: #fff;
+  }
+  a {
+    cursor: pointer;
+  }
+}
+

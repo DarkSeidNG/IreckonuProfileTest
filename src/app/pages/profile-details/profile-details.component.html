@@ -1,0 +1,31 @@
+<app-header>
+  <h2 class="header-title">Profile:
+    <span class="profile-details-image-cont">
+      <img [alt]="profileDetails.first_name || 'profile-photo'" src="{{profileDetails.photo}}" />
+      <span class="linkedin-circle">in</span>
+    </span>
+    {{profileDetails.first_name}} {{profileDetails.last_name}}
+  </h2>
+  <div class="details-nav-bar">
+    <nav mat-tab-nav-bar >
+      <a mat-tab-link
+         (click)="activeLink = 'profileDetail'"
+         [active]="activeLink == 'profileDetail'">Profile Detail</a>
+      <a mat-tab-link
+         (click)="activeLink = 'profileIds'"
+         [active]="activeLink == 'profileIds'">Profile ID's</a>
+      <a mat-tab-link
+         (click)="activeLink = 'activityTimeline'"
+         [active]="activeLink == 'activityTimeline'">Activity Timeline</a>
+    </nav>
+  </div>
+</app-header>
+
+<app-body>
+  <div class="details-body-container">
+    <app-quick-facts></app-quick-facts>
+    <div class="mat-elevation-z2 details-right-container" >
+      <app-profile-detail-tab *ngIf="activeLink == 'profileDetail'" [profile]="profileDetails"></app-profile-detail-tab>
+    </div>
+  </div>
+</app-body>
