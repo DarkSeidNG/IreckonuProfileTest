@@ -15,6 +15,8 @@ import {BodyComponent} from '../../containers/body/body.component';
 import {ProfileDetailTabComponent} from '../profile-detail-tab/profile-detail-tab.component';
 import {AlertsComponent} from '../alerts/alerts.component';
 import {PercentageChartComponent} from '../../custom/percentage-chart/percentage-chart.component';
+import {TelephoneCustomPipe} from '../../../pipes/telephone/telephone-custom.pipe';
+import {CustomPipe} from '../../../pipes/custom/custom.pipe';
 
 describe('QuickFactsComponent', () => {
   let component: QuickFactsComponent;
@@ -44,7 +46,9 @@ describe('QuickFactsComponent', () => {
         QuickFactsComponent,
         ProfileDetailTabComponent,
         AlertsComponent,
-        PercentageChartComponent
+        PercentageChartComponent,
+        TelephoneCustomPipe,
+        CustomPipe
       ]
     })
     .compileComponents();

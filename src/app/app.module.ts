@@ -16,6 +16,8 @@ import { PercentageChartComponent } from './shared/components/custom/percentage-
 import { AlertsComponent } from './shared/components/layouts/alerts/alerts.component';
 import { QuickFactsComponent } from './shared/components/layouts/quick-facts/quick-facts.component';
 import { ProfileDetailTabComponent } from './shared/components/layouts/profile-detail-tab/profile-detail-tab.component';
+import { TelephoneCustomPipe } from './shared/pipes/telephone/telephone-custom.pipe';
+import { CustomPipe } from './shared/pipes/custom/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ProfileDetailTabComponent } from './shared/components/layouts/profile-d
     AlertsComponent,
     QuickFactsComponent,
     ProfileDetailTabComponent,
+    TelephoneCustomPipe,
+    CustomPipe,
   ],
   imports: [
     BrowserModule,
