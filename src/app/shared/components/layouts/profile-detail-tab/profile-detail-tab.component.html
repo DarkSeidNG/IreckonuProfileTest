@@ -6,7 +6,7 @@
         Prefix
       </div>
       <div class="detail-item-text">
-        {{profile.prefix}}
+        {{profile.prefix | custom:',' || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -17,7 +17,7 @@
         First Name
       </div>
       <div class="detail-item-text">
-        {{profile.first_name}}
+        {{profile.first_name || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -28,7 +28,7 @@
         Last Name
       </div>
       <div class="detail-item-text">
-        {{profile.last_name}}
+        {{profile.last_name || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -39,7 +39,7 @@
         Suffix
       </div>
       <div class="detail-item-text">
-        {{profile.suffix}}
+        {{profile.suffix || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -50,7 +50,7 @@
         Loyalty Member ID
       </div>
       <div class="detail-item-text">
-        {{profile.loyalty_member_id}}
+        {{profile.loyalty_member_id || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -61,7 +61,7 @@
         Phone
       </div>
       <div class="detail-item-text">
-        {{profile.phone}}
+        {{profile.phone | telephoneCustom: '+31':true || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -72,7 +72,7 @@
         Address
       </div>
       <div class="detail-item-text">
-        {{profile.address}}
+        {{profile.address || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>
@@ -83,7 +83,7 @@
         Birthdate
       </div>
       <div class="detail-item-text">
-        {{profile.birthdate | date:"yyyy-MM-dd"}}
+        {{profile.birthdate | date:"yyyy-MM-dd" || '-'}}
       </div>
       <div class="detail-item-icon">
         <mat-icon>create</mat-icon>

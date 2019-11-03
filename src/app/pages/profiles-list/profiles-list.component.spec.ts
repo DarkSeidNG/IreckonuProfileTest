@@ -15,6 +15,8 @@ import {QuickFactsComponent} from '../../shared/components/layouts/quick-facts/q
 import {ProfileDetailTabComponent} from '../../shared/components/layouts/profile-detail-tab/profile-detail-tab.component';
 import {AlertsComponent} from '../../shared/components/layouts/alerts/alerts.component';
 import {PercentageChartComponent} from '../../shared/components/custom/percentage-chart/percentage-chart.component';
+import {TelephoneCustomPipe} from '../../shared/pipes/telephone/telephone-custom.pipe';
+import {CustomPipe} from '../../shared/pipes/custom/custom.pipe';
 
 describe('ProfilesListComponent', () => {
   let component: ProfilesListComponent;
@@ -44,7 +46,9 @@ describe('ProfilesListComponent', () => {
         QuickFactsComponent,
         ProfileDetailTabComponent,
         AlertsComponent,
-        PercentageChartComponent
+        PercentageChartComponent,
+        TelephoneCustomPipe,
+        CustomPipe
       ]
     })
     .compileComponents();

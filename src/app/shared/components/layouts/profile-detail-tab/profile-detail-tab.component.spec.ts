@@ -16,6 +16,8 @@ import {QuickFactsComponent} from '../quick-facts/quick-facts.component';
 import {AlertsComponent} from '../alerts/alerts.component';
 import {PercentageChartComponent} from '../../custom/percentage-chart/percentage-chart.component';
 import {profileDataMock} from '../../../../pages/profile-details/profile-details.component.spec';
+import {TelephoneCustomPipe} from '../../../pipes/telephone/telephone-custom.pipe';
+import {CustomPipe} from '../../../pipes/custom/custom.pipe';
 
 describe('ProfileDetailTabComponent', () => {
   let component: ProfileDetailTabComponent;
@@ -45,7 +47,9 @@ describe('ProfileDetailTabComponent', () => {
         QuickFactsComponent,
         ProfileDetailTabComponent,
         AlertsComponent,
-        PercentageChartComponent
+        PercentageChartComponent,
+        TelephoneCustomPipe,
+        CustomPipe
       ]
     })
     .compileComponents();
