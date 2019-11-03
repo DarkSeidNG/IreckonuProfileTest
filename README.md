@@ -29,15 +29,15 @@ The app folder contains two root folders:
  ![Alt text](presentation/folder.png?raw=true "Directory Structure")
 
 ## Screenshots
-![Alt text](presentation/Capture 003.png?raw=true "Profiles Page Web")
+![Alt text](presentation/capture03.png?raw=true "Profiles Page Web")
 - profiles page web
 
-![Alt text](presentation/Capture 05.png?raw=true "Profiles Page Mobile")
+![Alt text](presentation/capture05.png?raw=true "Profiles Page Mobile")
  - profiles page mobile
  
-![Alt text](presentation/Capture 004.png?raw=true "Profile Details Page Web")
+![Alt text](presentation/capture04.png?raw=true "Profile Details Page Web")
  - profile details page web
   
-![Alt text](presentation/Capture 006.png?raw=true "Profile Details Page Mobile")
+![Alt text](presentation/capture06.png?raw=true "Profile Details Page Mobile")
  - profile details page mobile
 
