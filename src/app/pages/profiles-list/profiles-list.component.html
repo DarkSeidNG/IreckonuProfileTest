@@ -3,9 +3,7 @@
   <div class="search-container">
     <div class="search-box">
       <mat-icon>search</mat-icon>
-      <label>
-        <input type="text" [(ngModel)]="searchText" placeholder="Search profiles" />
-      </label>
+      <input type="text" [(ngModel)]="searchText" placeholder="Search profiles" />
     </div>
     <button class="search-button" (click)="applyFilter(searchText)">
       <mat-icon>search</mat-icon>

@@ -53,22 +53,7 @@ describe('ProfileDetailsComponent', () => {
   }));
 
   beforeEach(() => {
-    history.pushState({data: {
-        address: '6a Abe Street',
-        birthdate: '2009-18-02',
-        email: 'dark@gmail.com',
-        email2: '',
-        first_name: 'Chris',
-        gender: 'Male',
-        last_name: 'Orji',
-        localid: 234,
-        loyalty_member_id: '226',
-        modified: '2019-02-19',
-        phone: '223-322-3232',
-        photo: '',
-        prefix: 'Mr',
-        suffix: 'Dr'
-      }}, 'data');
+    history.pushState({data: profileDataMock}, 'data');
     fixture = TestBed.createComponent(ProfileDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -77,4 +62,29 @@ describe('ProfileDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have profile details passed', () => {
+    expect(component.profileDetails).toEqual(profileDataMock);
+  });
+
+  it('has profileDetail as the default selected tab link', () => {
+    expect(component.activeLink).toEqual('profileDetail');
+  });
 });
+
+export const profileDataMock = {
+  address: '6a Abe Street',
+  birthdate: '2009-18-02',
+  email: 'dark@gmail.com',
+  email2: '',
+  first_name: 'Chris',
+  gender: 'Male',
+  last_name: 'Orji',
+  localid: 234,
+  loyalty_member_id: '226',
+  modified: '2019-02-19',
+  phone: '223-322-3232',
+  photo: '',
+  prefix: 'Mr',
+  suffix: 'Dr'
+};

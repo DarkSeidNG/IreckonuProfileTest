@@ -22,6 +22,22 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Folder Structure
+The app folder contains two root folders:  
+ - pages - contains the components for the different web pages (profiles and profile details)
+ - shared - contains components, services, interfaces and objects used to build the app
+ ![Alt text](presentation/folder.png?raw=true "Directory Structure")
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Screenshots
+![Alt text](presentation/Capture 003.png?raw=true "Profiles Page Web")
+- profiles page web
+
+![Alt text](presentation/Capture 05.png?raw=true "Profiles Page Mobile")
+ - profiles page mobile
+ 
+![Alt text](presentation/Capture 004.png?raw=true "Profile Details Page Web")
+ - profile details page web
+  
+![Alt text](presentation/Capture 006.png?raw=true "Profile Details Page Mobile")
+ - profile details page mobile
+

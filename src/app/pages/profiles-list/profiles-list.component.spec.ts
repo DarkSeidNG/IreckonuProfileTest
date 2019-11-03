@@ -59,4 +59,16 @@ describe('ProfilesListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain the Profiles header title', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.header-title').textContent).toContain('Profiles');
+  });
+
+  it('search should return empty result', () => {
+    component.searchText = '9323bndbyd32by3b32y3b2u23b y32bb3u';
+    const compiled = fixture.debugElement.nativeElement;
+    compiled.querySelector('.search-button').click();
+    expect(component.dataSource.paginator).toBeUndefined();
+  });
 });
