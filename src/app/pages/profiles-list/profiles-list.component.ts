@@ -37,6 +37,7 @@ export class ProfilesListComponent implements OnInit {
   updateDataSource(profiles: ProfileData[]) {
     this.dataSource = new MatTableDataSource(profiles);
     this.dataSource.paginator = this.paginator;
+    this.dataSource.paginator._intl.itemsPerPageLabel = 'Rows per page:';
     this.dataSource.sort = this.sort;
     this.dataSource.filterPredicate = (data, filter: string): boolean => {
       return (

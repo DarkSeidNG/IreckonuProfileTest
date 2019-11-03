@@ -15,6 +15,7 @@ import {BodyComponent} from '../../containers/body/body.component';
 import {QuickFactsComponent} from '../quick-facts/quick-facts.component';
 import {AlertsComponent} from '../alerts/alerts.component';
 import {PercentageChartComponent} from '../../custom/percentage-chart/percentage-chart.component';
+import {profileDataMock} from '../../../../pages/profile-details/profile-details.component.spec';
 
 describe('ProfileDetailTabComponent', () => {
   let component: ProfileDetailTabComponent;
@@ -53,26 +54,15 @@ describe('ProfileDetailTabComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ProfileDetailTabComponent);
     component = fixture.componentInstance;
-    component.profile = {
-      address: '6a Abe Street',
-      birthdate: '2009-18-02',
-      email: 'dark@gmail.com',
-      email2: '',
-      first_name: 'Chris',
-      gender: 'Male',
-      last_name: 'Orji',
-      localid: 234,
-      loyalty_member_id: '226',
-      modified: '2019-02-19',
-      phone: '223-322-3232',
-      photo: '',
-      prefix: 'Mr',
-      suffix: 'Dr'
-    };
+    component.profile = profileDataMock;
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('profileData should be set properly', () => {
+    expect(component.profile).toEqual(profileDataMock);
   });
 });
