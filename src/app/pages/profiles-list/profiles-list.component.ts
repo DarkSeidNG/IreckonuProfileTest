@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, DoCheck, OnInit, ViewChild} from '@angular/core';
 import { Router } from '@angular/router';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
@@ -53,9 +53,10 @@ export class ProfilesListComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
-    if (this.dataSource.paginator.length === 0) {
+
+    /*if (this.dataSource.paginator.length === 0) {
       this.alertsService.add({type: 'error', message: filterProfilesError});
-    }
+    }*/
   }
 
   openProfileDetails(profileData: ProfileData) {
