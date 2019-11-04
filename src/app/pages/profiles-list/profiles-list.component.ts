@@ -54,9 +54,9 @@ export class ProfilesListComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
 
-    /*if (this.dataSource.paginator.length === 0) {
+    if (this.dataSource.filteredData.length === 0) {
       this.alertsService.add({type: 'error', message: filterProfilesError});
-    }*/
+    }
   }
 
   openProfileDetails(profileData: ProfileData) {
